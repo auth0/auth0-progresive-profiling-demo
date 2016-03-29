@@ -1,5 +1,4 @@
 import Auth0Lock from "auth0-lock/lib/classic"; 
-import ls from "local-storage";
 import login_template from "../templates/login.ejs";
 import $ from "jquery";
 
@@ -13,13 +12,27 @@ export default class Login {
     this.lock = new Auth0Lock(
       'GTOKRbb07FjepocQ7R9qRX6EFIaLfDjI', 
       'wptest.auth0.com', 
-      {}, 
+      {
+        initialScreen: "signUp",
+        additionalSignUpFields: [
+          {
+            name: "name",
+            icon: "img/name.svg",
+            placeholder: "your name"
+          },
+          {
+            name: "lastName",
+            icon: "img/name.svg",
+            placeholder: "your last name"
+          }
+        ]
+      }, 
       (error, result) => {
         if (error) {
 
         }
         if (result) {
-          this.app.logIn(result.idToken, result.profile);
+          this.app.logIn(result.idToken,result.accessToken,result.profile);
         }
     });
 

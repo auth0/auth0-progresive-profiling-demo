@@ -1,4 +1,4 @@
 @import '../node_modules/normalize.css/normalize.css';
-body {
-  color: red;
+.auth0-lock.auth0-lock .auth0-lock-input-wrap .auth0-lock-custom-icon {
+  width: 12px;
 }

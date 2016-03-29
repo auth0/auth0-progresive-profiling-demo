@@ -1,4 +1,3 @@
-import ls from "local-storage";
 import profile_template from "../templates/profile.ejs";
 import $ from "jquery";
 
