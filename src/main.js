@@ -33,7 +33,7 @@ class App {
   updateMetadata(metadata) { 
     this.profile.user_metadata = metadata;
 
-    fetch('https://' + 'wptest.auth0.com' + '/api/v2/users/' + this.profile.user_id, {
+    fetch('https://' + auth0_config.domain + '/api/v2/users/' + this.profile.user_id, {
           method: 'PATCH',
           headers: {
             'Accept': 'application/json',

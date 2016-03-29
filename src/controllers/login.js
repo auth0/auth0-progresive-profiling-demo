@@ -10,8 +10,8 @@ export default class Login {
     this.app = app;
 
     this.lock = new Auth0Lock(
-      'GTOKRbb07FjepocQ7R9qRX6EFIaLfDjI', 
-      'wptest.auth0.com', 
+      auth0_config.client_id, 
+      auth0_config.domain, 
       {
         initialScreen: "signUp",
         additionalSignUpFields: [
