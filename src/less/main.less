@@ -1,5 +1,81 @@
-@import '../node_modules/normalize.css/normalize.css';
 
 .auth0-lock.auth0-lock .auth0-lock-input-wrap .auth0-lock-custom-icon {
   width: 12px;
+}
+
+header {
+  .user {
+    line-height: 53px;
+    margin-right: 15px;
+    color: #d0d2d3;
+
+    img {
+      margin-right: 5px;
+      width: 30px;
+      margin-top: -3px;
+    }
+  }
+}
+
+header.site-header {
+  background-color: #15181d !important;
+  height: 94px;
+  width: 100%;
+  position: relative !important;
+}
+@media screen and (max-width: 990px) {
+  header.site-header {
+    background-color: transparent !important;
+  }
+}
+
+code.profile {
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  margin: 30px;
+
+  pre {
+    display: block;
+    margin: 0;
+    padding: 30px;
+  }
+}
+
+.login-page {
+  margin-top: 200px;
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+  
+  .form-group {
+    overflow: hidden;
+  }
+
+  label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  input[type=radio] {
+    margin-left: 5px;
+  }
+  input[type=text] {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  }
+
 }

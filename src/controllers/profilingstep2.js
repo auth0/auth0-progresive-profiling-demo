@@ -12,7 +12,8 @@ export default class ProfilingStep2 {
   }
 
   render() {
-    $('#main-container').html( profilingstep2_template() );
+    $('#main-container').html( profilingstep2_template({profile:this.app.getUser()}) );
+    $('#logout-button').click( () => this.app.logOut() );
     $('#profiler-step2').submit( (event) => {
       event.preventDefault();
 

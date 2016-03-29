@@ -1,17 +1,20 @@
-<button id="logout-button">Logout</button>
-<h1><%= profile.email %></h1>
-<img src="<%= profile.picture %>" />
+<% include header %>
 
-<ul>
-  
-  <li><b>Name:</b> <%= profile.user_metadata.name %></li>
-  <li><b>Last name:</b> <%= profile.user_metadata.lastName %></li>
-  <li><b>Title:</b> <%= profile.user_metadata.title || 'not answered yet' %></li>
-  <li><b>Company:</b> <%= profile.user_metadata.company || 'not answered yet' %></li>
-  <li><b>Is interested:</b> <%= profile.user_metadata.interested || 'not answered yet' %></li>
-  <li><b>Decision timeframe:</b> <%= profile.user_metadata.timeframe || 'not answered yet' %></li>
+<section class="jumbotron">
+  <h2><img src="<%= profile.picture %>" width="100px" height="100px" /></h2>
+  <h1><%= profile.user_metadata.name || "" %> <%= profile.user_metadata.last_name || "" %></h1>
+  <p>
+    <b>Name:</b> <%= profile.user_metadata.name %> - 
+    <b>Last name:</b> <%= profile.user_metadata.last_name %> - 
+    <b>Email:</b> <%= profile.email %> - 
+    <b>Title:</b> <%= profile.user_metadata.title || 'not answered yet' %> - 
+    <b>Company:</b> <%= profile.user_metadata.company || 'not answered yet' %> - 
+    <b>Is interested:</b> <%= profile.user_metadata.interested || 'not answered yet' %> - 
+    <b>Decision timeframe:</b> <%= profile.user_metadata.timeframe || 'not answered yet' %>
+  </p>
 
-</ul>
-<pre>
-<%- prettyjson.render(profile) %>
-</pre>
+</section>
+
+<code class="profile">
+  <pre><%- prettyjson.render(profile) %></pre>
+</code>

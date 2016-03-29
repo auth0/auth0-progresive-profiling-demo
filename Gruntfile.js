@@ -38,7 +38,8 @@ module.exports = function (grunt) {
       js: {
         files: [
           'src/main.js',
-          'src/**/*.js'
+          'src/**/*.js',
+          'src/templates/*.ejs'
         ],
         tasks: ['build']
       }

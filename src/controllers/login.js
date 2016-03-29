@@ -20,7 +20,7 @@ export default class Login {
             placeholder: "your name"
           },
           {
-            name: "lastName",
+            name: "last_name",
             icon: "img/name.svg",
             placeholder: "your last name"
           }
@@ -38,7 +38,7 @@ export default class Login {
   }
 
   render() {
-    $('#main-container').html( login_template() );
+    $('#main-container').html( login_template({profile:null}) );
     $('#login-button').click( () => this.lock.show() );
   }
 

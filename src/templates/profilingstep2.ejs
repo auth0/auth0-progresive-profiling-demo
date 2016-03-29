@@ -1,32 +1,37 @@
+<% include header %>
 <form id="profiler-step2">
   
-  <div>
-    <label>Are you interested in the new product?</label>
 
-    <input type="radio" id="interested_yes_field" name="interested" value="yes" />
-    <label for="interested_yes_field">Yes</label>
+  <div class="form-group">
+    <label class="col-xs-offset-2 col-xs-3">Are you interested in the new product?</label>
+    <div class="col-xs-5">
+      <input type="radio" id="interested_yes_field" name="interested" value="yes" />
+      <label for="interested_yes_field">Yes</label>
 
-    <input type="radio" id="interested_no_field" name="interested" value="no" />
-    <label for="interested_no_field">No</label>
-  </div>
-  
-  <div>
-    <label>When are you taking this decision?</label>
-
-    <input type="radio" id="timeframe_week" name="timeframe" value="week" />
-    <label for="timeframe_week">A week</label>
-
-    <input type="radio" id="timeframe_month" name="timeframe" value="month" />
-    <label for="timeframe_month">A month</label>
-
-    <input type="radio" id="timeframe_two_month" name="timeframe" value="2months" />
-    <label for="timeframe_two_month">Two months</label>
-
-    <input type="radio" id="timeframe_moretwo_month" name="timeframe" value="more2months" />
-    <label for="timeframe_moretwo_month">More than two months</label>
+      <input type="radio" id="interested_no_field" name="interested" value="no" />
+      <label for="interested_no_field">No</label>
+    </div>
   </div>
 
+  <div class="form-group">
+    <label class="col-xs-offset-2 col-xs-3">When are you taking this decision?</label>
 
-  <input type="submit" value="Save" />
+    <div class="col-xs-5">
+      <input type="radio" id="timeframe_week" name="timeframe" value="week" />
+      <label for="timeframe_week">A week</label>
+
+      <input type="radio" id="timeframe_month" name="timeframe" value="month" />
+      <label for="timeframe_month">A month</label>
+
+      <input type="radio" id="timeframe_two_month" name="timeframe" value="2months" />
+      <label for="timeframe_two_month">Two months</label>
+
+      <input type="radio" id="timeframe_moretwo_month" name="timeframe" value="more2months" />
+      <label for="timeframe_moretwo_month">More than two months</label>
+    </div>
+  </div>
+
+
+  <input type="submit" value="Save" class="btn btn-primary btn-lg col-xs-offset-5" />
 
 </form>

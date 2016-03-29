@@ -1,0 +1,21 @@
+<header class="site-header">
+  <nav role="navigation" class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <h1 class="navbar-brand"><a href="/"><span>Auth0</span></a></h1>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+      <% if (profile) { %>
+        <li class="li-docs no-basic user">
+          <img src="<%= profile.picture %>" class="img-circle" />
+          <%= profile.user_metadata.name || "" %> <%= profile.user_metadata.last_name || "" %>
+        </li>
+        <li><a href="#" class="signin-button login" id="logout-button">Logout</a></li>
+      <% } %>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="header-bg">
+</div>
+                    
