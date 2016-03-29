@@ -13,7 +13,6 @@ export default class Login {
       auth0_config.client_id, 
       auth0_config.domain, 
       {
-        initialScreen: "signUp",
         additionalSignUpFields: [
           {
             name: "name",

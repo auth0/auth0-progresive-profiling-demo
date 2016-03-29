@@ -12,3 +12,6 @@
   <li><b>Decision timeframe:</b> <%= profile.user_metadata.timeframe || 'not answered yet' %></li>
 
 </ul>
+<pre>
+<%- prettyjson.render(profile) %>
+</pre>
