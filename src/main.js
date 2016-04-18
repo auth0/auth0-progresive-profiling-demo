@@ -1,6 +1,9 @@
 import $ from "jquery";
 import ls from "local-storage";
 
+import fetchify from "fetchify";
+let fetch = fetchify(Promise).fetch;
+
 import Login from "./controllers/login.js";
 import Profile from "./controllers/profile.js";
 import ProfilingStep1 from "./controllers/profilingstep1.js";

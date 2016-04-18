@@ -1,7 +1,5 @@
 import profilingstep1_template from "../templates/profilingstep1.ejs";
 import $ from "jquery";
-import fetchify from "fetchify";
-let fetch = fetchify(Promise).fetch;
 
 export default class ProfilingStep1 { 
 
